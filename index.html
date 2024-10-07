@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Prediction Model</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fire Prediction Model</h1>
+        <p>Please provide the following weather-related data:</p>
+
+        <div id="inputRanges" class="input-ranges">
+            <ul>
+                <h4>Input Ranges:</h4>
+                <li>Temperature: <strong>20 - 50 °C</strong></li>
+                <li>Wind Speed: <strong>5 - 30 km/h</strong></li>
+                <li>Fuel Moisture Code: <strong>25 - 93</strong></li>
+                <li>Duff Moisture Code: <strong>1 - 64</strong></li>
+                <li>Initial Spread Index: <strong>1 - 5</strong></li>
+            </ul>
+        </div>
+    
+        <form id="firePredictionForm">
+            <div class="form-group">
+                <label for="temperature">Temperature (°C)</label>
+                <input type="number" id="temperature" value="0" min="20" max="50" required>
+            </div>
+            <div class="form-group">
+                <label for="windSpeed">Wind Speed (km/h)</label>
+                <input type="number" id="windSpeed" value="0" min="5" max="30" required>
+            </div>
+            <div class="form-group">
+                <label for="fuelMoisture">Fuel Moisture Code</label>
+                <input type="number" id="fuelMoisture" value="0" min="25" max="93" required>
+            </div>
+            <div class="form-group">
+                <label for="duffMoisture">Duff Moisture Code</label>
+                <input type="number" id="duffMoisture" value="0" min="1" max="64" required>
+            </div>
+            <div class="form-group">
+                <label for="initialSpread">Initial Spread Index</label>
+                <input type="number" id="initialSpread" value="0" min="1" max="5" required>
+            </div>
+                    
+            <button class="somethingplz" type="button" id="toggleRangesButton" onclick="toggleRanges()">Show Input Ranges</button>
+            <p></p>
+            <button class="somethingplz" type="button" id="submitButton" onclick="submitData()">Calculate</button>
+        </form>
+    
+        <div id="output" class="output">
+            <h3>Probability for your Input:</h3>
+            <p id="dataOutput"></p>
+        </div>
+        <div class="team-info">
+            <h2 class="somethingplz">Team:  RedLine</h2>
+            <div class="logo-container">
+                <div class="logo-box"></div> 
+            </div>
+            <p><strong><p class="team-members">Team Members:</p></strong> <p>Hemank (Section I1), Neeraj (Section I1)</p></p>
+            <p><strong><p class="team-members">App Info:</p></strong><p>This forest fire prediction app helps assess the risk of wildfires based on weather and environmental data, making prevention efforts more effective.</p> </p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kay+Pho+Du:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  font-family: 'CustomFont';
+  src: url('coolvetica\ rg.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('Background.png'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: "CustomFont", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #ff7f00; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: fadeInDown 1s ease-out;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #ffdfbe;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.team-members {
+  color: #ff7f00;
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: rgb(90, 76, 92, 0.6); 
+  border-radius: 12px;
+  box-shadow: 1 8px 20px rgba(58, 58, 58, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+  animation: slideIn 0.8s ease-in-out;
+}
+
+#dataOutput{
+  font-weight: 700;
+  color: #ffdfbe;
+}
+
+label {
+  font-size: 18px;
+  color: #ffdfbe;
+}
+
+input {
+  width: 120px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: rgb(255, 219, 187, 0.2);
+  border: rgb(255, 219, 187, 0.2);
+  text-align: center;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  color: #ffdfbe;
+}
+
+input:focus {
+  border-color: #ff9933;
+  outline: none;
+  background-color: #333;
+}
+
+.somethingplz {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Button Styles */
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 20px;
+  color: #fff;
+  background-color: rgb(255, 139, 62, 0.5);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #ff9933;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
+button:active {
+  background-color: #e67300;
+  transform: translateY(0);
+}
+
+.output {
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 8px;
+  display: none; 
+  animation: fadeIn 1s ease-in-out; 
+  background-color: rgb(90, 76, 92, 0.5);
+  color: #ff9933;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.output.show {
+  display: block; 
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.95);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateX(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.team-info {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgb(90, 76, 92, 0.5);
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.team-info h2 {
+  font-size: 24px;
+  color: #ff7f00;
+  margin-bottom: 15px;
+}
+
+.team-info p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.logo-container {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.logo-box {
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  background-image: url('RedLine.png');
+  background-size: cover; 
+  background-position: center;
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+}
+
+.input-ranges {
+  margin-top: 20px;
+  background-color: rgb(90, 76, 92, 0.3);
+  padding: 0; 
+  padding-left: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #ffdfbe;
+  overflow: hidden; 
+  max-height: 0; 
+  transition: max-height 0.5s ease-out;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.input-ranges.show {
+  max-height: 200px; 
+  margin-bottom: 20px;
+}
+
+.input-ranges h4 {
+  margin: 0 0 10px;
+  color: #ff7f00;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
